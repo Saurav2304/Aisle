@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/numberLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_60dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/gilroysemibold"
+            android:text="@string/dummy_phone_number"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_20sp" />
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/black"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_enter_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:fontFamily="@font/gilroyextrabold"
+        android:text="@string/enter_otp_text"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_30sp"
+        app:layout_constraintEnd_toEndOf="@+id/numberLayout"
+        app:layout_constraintStart_toStartOf="@+id/numberLayout"
+        app:layout_constraintTop_toBottomOf="@+id/numberLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/tv_enter_phone"
+        app:layout_constraintStart_toStartOf="@+id/tv_enter_phone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_enter_phone">
+
+
+        <EditText
+            android:id="@+id/et_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@drawable/app_border"
+            android:cursorVisible="false"
+            android:ems="4"
+            android:maxLength="4"
+            android:fontFamily="@font/gilroyextrabold"
+            android:inputType="none|numberSigned"
+            android:padding="@dimen/_10dp"
+            android:text="@string/dummy_otp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_continue_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:background="@drawable/round_button_yellow"
+        android:fontFamily="@font/gilroysemibold"
+        android:text="@string/continue_"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:paddingLeft="@dimen/_30dp"
+        android:paddingRight="@dimen/_30dp"
+        android:textSize="@dimen/_20sp"
+        android:textStyle="bold"
+        android:stateListAnimator="@null"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/tv_otp_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:fontFamily="@font/gilroysemibold"
+        android:text="00:59"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_continue_otp"
+        app:layout_constraintStart_toEndOf="@+id/bt_continue_otp"
+        app:layout_constraintTop_toTopOf="@+id/bt_continue_otp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/yellow"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

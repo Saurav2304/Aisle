@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Aisle</string>
+    <string name="premium_mem">Premium members can view all their likes at once </string>
+    <string name="review">Tap to review 50+ notes</string>
+    <string name="interested">Interested In You</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="continue_">Continue</string>
+    <string name="testing_phone">9876543212</string>
+    <string name="india_prefix">+91</string>
+    <string name="enter_otp_text">Enter The <br/>OTP</string>
+    <string name="dummy_phone_number">+91 987654321</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="dummy_otp">1234</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="enter_your_number">Enter Your <br/>Phone Number</string>
+    <string name="notes">Notes</string>
+    <string name="msg_otp">Enter 6-digit Otp</string>
+    <string name="msg_enter_mobile">Enter mobile number</string>
+    <string name="msg_enter_10digitmobile">Enter 10-digit mobile number</string>
+    <string name="name">Meena, 23</string>
+    <string name="personal_messages_to_you">Personal messages to you</string>
+    <string name="teena">Teena</string>
+    <string name="beena">Beena</string>
+</resources>
